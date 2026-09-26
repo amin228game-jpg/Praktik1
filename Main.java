@@ -1,10 +1,8 @@
-package org.example;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main {
-    static void main() {
+public class Main1 {
+    public static void main(String[] args) {
         task1();
         task2();
         task3();
@@ -30,10 +28,12 @@ public class Main {
         }
         System.out.println("");
     }
+
     public static void task2() {
         System.out.println("Задание 2");
         int[] num = {2, 76, 84, 3, 7, 65, 3, 9, 4, 8};
         System.out.println(Arrays.toString(num));
+
         int res = 0;
         for (int i = 0; i < num.length; i++) {
             if (num[i] % 2 == 0) {
@@ -46,28 +46,28 @@ public class Main {
             if (num[i] % 2 == 0) {
                 System.out.print(num[i] + " ");
             }
-        }
+        } 
+        System.out.println();
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] % 2 != 0) {
+                System.out.print(num[i] + " ");
+            }
+        }   
         System.out.println("");
         System.out.println("");
     }
 
     public static void task3() {
         System.out.println("Задание 3");
-
-        for(int i = 1; i < 6; i++){
-            System.out.print(1 + " * " + i + " = " + 1 * i + "  ");
-        }   System.out.println("");
-        for(int i = 1; i < 6; i++) {
-            System.out.print(2 + " * " + i + " = " + 2 * i + "  ");
-        }   System.out.println("");
-        for(int i = 1; i < 6; i++) {
-            System.out.print(3 + " * " + i + " = " + 3 * i + "  ");
-        }   System.out.println("");
-        for(int i = 1; i < 6; i++) {
-            System.out.print(4 + " * " + i + " = " + 4 * i + "  ");
-        }   System.out.println("");
-        for(int i = 1; i < 6; i++) {
-            System.out.print(5 + " * " + i + " = " + 5 * i + "  ");
-        }   System.out.println("");
+        
+        for( int x= 1; x < 6; x++){
+            for(int i = 1; i < 6; i++){
+            System.out.println(x + " * " + i + " = " + x * i + "  ");
+        }
+        }
     }
+
 }
+
+
+        
